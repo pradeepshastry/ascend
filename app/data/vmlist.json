@@ -1,0 +1,2595 @@
+[
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-use-pr-di-dev-saltmaster",
+    "name": "asc-ana-use-pr-di-dev-saltmaster",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "hardwareProfile": {
+      "vmSize": "Standard_A3"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "OpenLogic",
+        "offer": "CentOS",
+        "sku": "7.1",
+        "version": "latest"
+      },
+      "osDisk": {
+        "osType": "Linux",
+        "name": "asc-ana-use-pr-di-dev-saltmaster",
+        "vhd": {
+          "uri": "https://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-use-pr-di-dev-saltmaster2016326122511.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-use-pr-di-dev-saltmaster",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-use-pr-di-de10"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://datestresgrp6765.blob.core.windows.net/"
+      }
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "ffd45e5f-2673-4632-9f31-8039ef09b090",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-use-pr-di-dev-saltmaster/extensions/LinuxAsm"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-use-pr-di-dev-saltmaster/extensions/Microsoft.Insights.VMDiagnosticsSettings"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-dev-pscarp-00-0",
+    "name": "asc-ana-uss-pr-di-dev-centos72-dev-pscarp-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Basic_A2"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-dev-pscarp-00-0osDisk.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "Attach"
+      },
+      "dataDisks": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-dev-pscarp-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_BE"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "2e4acdbd-e1fa-4172-8f47-7b58687ca7a1",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-dev-pscarp-00-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-disfail-00-0",
+    "name": "asc-ana-uss-pr-di-dev-centos72-disfail-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A2"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-disfail-00-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/kafka300-0407-osDisk.c93031f8-d902-4700-a7db-2e9c755ad334.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-centos72-disfail-00-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-disfail-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_TEST1"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "3f13c2ea-9185-4af9-9090-fd77b108002e",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-disfail-00-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-disfail-00-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-kernel-rescue-00-0",
+    "name": "asc-ana-uss-pr-di-dev-centos72-kernel-rescue-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Basic_A1"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-kernel-rescue-00-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/kafka300-0407-osDisk.c93031f8-d902-4700-a7db-2e9c755ad334.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-centos72-kernel-rescue-00-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-kernel-rescue-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_TEST"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "3dc6214f-adba-47f4-be01-4fea552460d7",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-kernel-rescue-00-0/extensions/CustomScriptForLinux"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-mysql-rp-00-0",
+    "name": "asc-ana-uss-pr-di-dev-centos72-mysql-rp-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A2"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-mysql-rp-00-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/kafka300-0407-osDisk.c93031f8-d902-4700-a7db-2e9c755ad334.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "asc-ana-uss-pr-di-dev-centos72-mysql-rp-00-0-20170314-172749",
+          "vhd": {
+            "uri": "https://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-mysqlv01-00-0-datadisk2.vhd "
+          },
+          "caching": "None",
+          "createOption": "Attach"
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-centos72-mysql-rp-00-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-mysql-rp-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_MYSQL"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "d382ba9f-3c20-4677-ba05-84c66c8ac456",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-mysql-rp-00-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-mysql-rp-00-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-oauth2-0010-0",
+    "name": "asc-ana-uss-pr-di-dev-centos72-oauth2-0010-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A3"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-oauth2-0010-0osDisk.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "Attach"
+      },
+      "dataDisks": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-oauth2-0010-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_BE"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "7ac4ae0b-8c48-474c-9372-5798bee65d7c",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-oauth2-0010-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-pentahonha-00-0",
+    "name": "asc-ana-uss-pr-di-dev-centos72-pentahonha-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A3"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-pentahonha-00-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/centos72salt-osDisk.139c11d0-6195-45c1-a6b9-a93a70e97684.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-centos72-pentahonha-00-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-pentahonha-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_NEWSET"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "a099c718-afad-45e3-9af3-90e02318f21e",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-pentahonha-00-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-pentahonha-00-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-poc1-00-0",
+    "name": "asc-ana-uss-pr-di-dev-centos72-poc1-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Basic_A2"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-poc1-00-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/kafka300-0407-osDisk.c93031f8-d902-4700-a7db-2e9c755ad334.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-centos72-poc1-00-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-poc1-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_ZOOKEEPER"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "cd1ca932-f377-4c65-affb-51bf98c4caa1",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-poc1-00-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-poc1-00-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-0",
+    "name": "asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {},
+    "hardwareProfile": {
+      "vmSize": "Standard_A4"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "cli79dd783cdb83212f-os-1489495911623",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-0osDisk.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "Attach"
+      },
+      "dataDisks": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://datestresgrp6765.blob.core.windows.net/"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_PSCARP_LNP"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "6acfaafa-ebc3-4675-8c4f-f2900dcbd974",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-1",
+    "name": "asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-1",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {},
+    "hardwareProfile": {
+      "vmSize": "Standard_A4"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "cli01e0f7b8c33de868-os-1489495288951",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-1osDisk.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "Attach"
+      },
+      "dataDisks": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-nic1"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://datestresgrp6765.blob.core.windows.net/"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_PSCARP_LNP"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "484da8b3-b372-4c2a-bea3-4d8f00191181",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-1/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-2",
+    "name": "asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-2",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {},
+    "hardwareProfile": {
+      "vmSize": "Standard_A4"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "cli9516e6241165576d-os-1489496184981",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-2osDisk.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "Attach"
+      },
+      "dataDisks": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-nic2"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://datestresgrp6765.blob.core.windows.net/"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_PSCARP_LNP"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "2a1d8b41-610d-4dc9-b145-3ce9b51f3cf9",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-pscarp-lnp-00-2/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-qa-pscarp1-00-0",
+    "name": "asc-ana-uss-pr-di-dev-centos72-qa-pscarp1-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A2"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-qa-pscarp1-00-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/centos72salt-osDisk.139c11d0-6195-45c1-a6b9-a93a70e97684.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-centos72-qa-pscarp1-00-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-qa-pscarp1-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_BE"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "adba0cf6-fa8a-4fee-ab7b-fc8a13d86d08",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-qa-pscarp1-00-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-qa-pscarp1-00-0/extensions/enablevmaccess"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-qa-pscarp1-00-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-testvm-00-0",
+    "name": "asc-ana-uss-pr-di-dev-centos72-testvm-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A3"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-centos72-testvm-00-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/centos72salt-osDisk.139c11d0-6195-45c1-a6b9-a93a70e97684.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "asc-ana-uss-pr-di-dev-kafka-0020-2osDisk",
+          "vhd": {
+            "uri": "https://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-kafka-0020-2osDisk.vhd"
+          },
+          "caching": "None",
+          "createOption": "Attach"
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-centos72-testvm-00-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-centos72-testvm-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_TEST"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "c13bc8cd-0748-4d79-b6fc-fc989af545a7",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-testvm-00-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-centos72-testvm-00-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-pentaho-ctoolsv1.4-008-0",
+    "name": "asc-ana-uss-pr-di-dev-pentaho-ctoolsv1.4-008-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A4"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-dev-pentaho-ctoolsv1.4-008-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "https://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/ctoolsv1.4-osDisk.c137003e-35d0-42a1-ad2c-a4a7ae5273fb.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "asc-ana-uss-pr-di-dev-pentaho-ctoolsv1.4-008-datadisk0",
+          "vhd": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-dev-pentaho-ctoolsv1.4-008-0DataDisk.vhd"
+          },
+          "image": {
+            "uri": "https://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/ctoolsv1.4-dataDisk-0.c137003e-35d0-42a1-ad2c-a4a7ae5273fb.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-pentaho-ctoolsv1.4-008-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-pentaho-ctoolsv1.4-008-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/DASHBOARDS"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "a0fcfee3-4ea4-47e1-a5e3-0572b4ca032d",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-pentaho-ctoolsv1.4-008-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-pentaho-teas-0012-0",
+    "name": "asc-ana-uss-pr-di-dev-pentaho-teas-0012-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A4"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-dev-pentaho-teas-0012-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/pentahonew52-osDisk.4b3f3a45-7f9c-4de2-93a3-7fd74987d635.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "asc-ana-uss-pr-di-dev-pentaho-teas-0012-datadisk0",
+          "vhd": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-dev-pentaho-teas-0012-0DataDisk.vhd"
+          },
+          "image": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/pentahonew52-dataDisk-0.4b3f3a45-7f9c-4de2-93a3-7fd74987d635.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-pentaho-teas-0012-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-pentaho-teas-0012-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/DASHBOARDS"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "3deb51d2-7e7e-4133-90e5-13c88e555f22",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-pentaho-teas-0012-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-pentaho-teas-0012-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-poc10",
+    "name": "asc-ana-uss-pr-di-dev-poc10",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "hardwareProfile": {
+      "vmSize": "Basic_A2"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "OpenLogic",
+        "offer": "CentOS",
+        "sku": "7.0",
+        "version": "latest"
+      },
+      "osDisk": {
+        "osType": "Linux",
+        "name": "asc-ana-uss-pr-di-dev-poc10",
+        "vhd": {
+          "uri": "https://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-poc10201642615017.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-poc10",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-de922"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://datestresgrp6765.blob.core.windows.net/"
+      }
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "d13ecd10-7a7d-454d-9046-4d40e1538460",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-poc10/extensions/LinuxAsm"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-poc10/extensions/Microsoft.Insights.VMDiagnosticsSettings"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-poc11",
+    "name": "asc-ana-uss-pr-di-dev-poc11",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "hardwareProfile": {
+      "vmSize": "Basic_A2"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "OpenLogic",
+        "offer": "CentOS",
+        "sku": "7.0",
+        "version": "latest"
+      },
+      "osDisk": {
+        "osType": "Linux",
+        "name": "asc-ana-uss-pr-di-dev-poc11",
+        "vhd": {
+          "uri": "https://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-poc11201642615256.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-poc11",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-de703"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://datestresgrp6765.blob.core.windows.net/"
+      }
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "691f068f-c7f9-40cb-8f18-cd6898229959",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-poc11/extensions/LinuxAsm"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-poc11/extensions/Microsoft.Insights.VMDiagnosticsSettings"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-schemarepo-003-0",
+    "name": "asc-ana-uss-pr-di-dev-schemarepo-003-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Basic_A2"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-schemarepo-003-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/kafka300-0407-osDisk.c93031f8-d902-4700-a7db-2e9c755ad334.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-schemarepo-003-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-schemarepo-003-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_SCHEMAREPO"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "a8f06bca-6927-4af7-8c01-1b1b1b1be64e",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-schemarepo-003-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-schemarepo-003-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-schemarepo-003-1",
+    "name": "asc-ana-uss-pr-di-dev-schemarepo-003-1",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Basic_A2"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-dev-schemarepo-003-1osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/kafka300-0407-osDisk.c93031f8-d902-4700-a7db-2e9c755ad334.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-dev-schemarepo-003-1",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-dev-schemarepo-003-nic1"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_SCHEMAREPO"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "70c4243b-2757-4a6a-a310-c3b27a37d8bb",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-schemarepo-003-1/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-dev-schemarepo-003-1/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-centos72-resize-00-0",
+    "name": "asc-ana-uss-pr-di-qa-centos72-resize-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Basic_A1"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-qa-centos72-resize-00-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/kafka300-0407-osDisk.c93031f8-d902-4700-a7db-2e9c755ad334.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "asc-ana-uss-pr-di-qa-centos72-resize-00-0-20170317-165500",
+          "vhd": {
+            "uri": "https://datestresgrp6765.blob.core.windows.net/vhds/sc-ana-uss-pr-di-dev-centos72-mysqlv01-00-0datadisk.vhd"
+          },
+          "caching": "None",
+          "createOption": "Attach",
+          "diskSizeGB": 180
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-qa-centos72-resize-00-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-qa-centos72-resize-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_TEST"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "8a04bffe-5f3a-4fe6-87b8-4145de6b602f",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-centos72-resize-00-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-centos72-resize-00-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-kafka-001-0",
+    "name": "asc-ana-uss-pr-di-qa-kafka-001-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {},
+    "hardwareProfile": {
+      "vmSize": "Standard_A3"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "clie62a4eb09d7ac7bb-os-1490263522092",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-qa-kafka-001-0osDisk.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "Attach"
+      },
+      "dataDisks": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-qa-kafka-001-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://datestresgrp6765.blob.core.windows.net/"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_KAFKA"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "8dd62cd2-8e29-44ee-95ce-1346e8c008ac",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-kafka-001-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-restproxy-001-0",
+    "name": "asc-ana-uss-pr-di-qa-restproxy-001-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A3"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-qa-restproxy-001-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/kafka300-0407-osDisk.c93031f8-d902-4700-a7db-2e9c755ad334.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-qa-restproxy-001-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-qa-restproxy-001-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_RESTPROXY"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "c7a20f05-047c-477f-8ab2-790893d0bfb8",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-restproxy-001-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-restproxy-001-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-schemarepo-004-0",
+    "name": "asc-ana-uss-pr-di-qa-schemarepo-004-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A3"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-qa-schemarepo-004-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/kafka300-0407-osDisk.c93031f8-d902-4700-a7db-2e9c755ad334.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-qa-schemarepo-004-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-qa-schemarepo-004-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_SCHEMAREPO"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "bd70d905-5ee8-4854-b16d-3c94feac742b",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-schemarepo-004-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-schemarepo-004-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-zookeeper-001-0",
+    "name": "asc-ana-uss-pr-di-qa-zookeeper-001-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {},
+    "hardwareProfile": {
+      "vmSize": "Standard_A3"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "cli6d470165d42318e6-os-1490264700317",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vhds/asc-ana-uss-pr-di-qa-zookeeper-001-0osDisk.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "Attach"
+      },
+      "dataDisks": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-qa-zookeeper-001-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://datestresgrp6765.blob.core.windows.net/"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC_ANA_USS_DI_DEV_AS_ZOOKEEPER"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "b674382f-ef66-4b9b-97d2-37ce80be8921",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-qa-zookeeper-001-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-stg-pentaho-ctools-prd-00-0",
+    "name": "asc-ana-uss-pr-di-stg-pentaho-ctools-prd-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A4"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-stg-pentaho-ctools-prd-00-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/pentahonew52-osDisk.4b3f3a45-7f9c-4de2-93a3-7fd74987d635.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "asc-ana-uss-pr-di-stg-pentaho-ctools-prd-00-datadisk0",
+          "vhd": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-stg-pentaho-ctools-prd-00-0DataDisk.vhd"
+          },
+          "image": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/pentahonew52-dataDisk-0.4b3f3a45-7f9c-4de2-93a3-7fd74987d635.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-stg-pentaho-ctools-prd-00-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-stg-pentaho-ctools-prd-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/DASHBOARDS"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "8df9635a-4605-490c-88ae-b016008ac07f",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-stg-pentaho-ctools-prd-00-0/extensions/CustomScriptForLinux"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-stg-pentaho-ctools-prd-00-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-0",
+    "name": "asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A2"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/pentahonew52-osDisk.4b3f3a45-7f9c-4de2-93a3-7fd74987d635.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-datadisk0",
+          "vhd": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-0DataDisk.vhd"
+          },
+          "image": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/pentahonew52-dataDisk-0.4b3f3a45-7f9c-4de2-93a3-7fd74987d635.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/DASHBOARDS"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "0fe4ead9-bcbf-4102-9f9f-364ab47b0883",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-0/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-1",
+    "name": "asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-1",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A2"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-1osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/pentahonew52-osDisk.4b3f3a45-7f9c-4de2-93a3-7fd74987d635.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-datadisk1",
+          "vhd": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-1DataDisk.vhd"
+          },
+          "image": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/pentahonew52-dataDisk-0.4b3f3a45-7f9c-4de2-93a3-7fd74987d635.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-1",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-nic1"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/DASHBOARDS"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "3d20a722-6041-446e-b20e-d4589dc42316",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-1/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-2",
+    "name": "asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-2",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A2"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-2osDisk.vhd"
+        },
+        "image": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/pentahonew52-osDisk.4b3f3a45-7f9c-4de2-93a3-7fd74987d635.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-datadisk2",
+          "vhd": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/vmcontainer910728d2-27e7-4ddc-b8f9-4fe45775be21/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-2DataDisk.vhd"
+          },
+          "image": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/pentahonew52-dataDisk-0.4b3f3a45-7f9c-4de2-93a3-7fd74987d635.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-2",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-nic2"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/DASHBOARDS"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "b5d184f8-4e69-4654-8202-c9526d38873f",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-stg-pentaho-ctools-stg-lnp-00-2/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-ana-uss-pr-di-stg-pentaho-pct-v1-0014-0",
+    "name": "asc-ana-uss-pr-di-stg-pentaho-pct-v1-0014-0",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {
+      "displayName": "VirtualMachine"
+    },
+    "hardwareProfile": {
+      "vmSize": "Standard_A4"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Linux",
+        "name": "osdisk",
+        "vhd": {
+          "uri": "http://datestresgrp6765.blob.core.windows.net/pentahovhds/asc-ana-uss-pr-di-stg-pentaho-pct-v1-0014-0osDisk.vhd"
+        },
+        "image": {
+          "uri": "https://datestresgrp6765.blob.core.windows.net/pentahocontainerbackup/asc-ana-uss-pr-di-dev-pentaho-ctoolsv1.4-008-0osDisk.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "asc-ana-uss-pr-di-stg-pentaho-pct-v1-0014-datadisk0",
+          "vhd": {
+            "uri": "http://datestresgrp6765.blob.core.windows.net/pentahovhds/asc-ana-uss-pr-di-stg-pentaho-pct-v1-0014-0DataDisk.vhd"
+          },
+          "image": {
+            "uri": "https://datestresgrp6765.blob.core.windows.net/pentahocontainerbackup/asc-ana-uss-pr-di-dev-pentaho-ctoolsv1.4-008-0DataDisk.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "asc-ana-uss-pr-di-stg-pentaho-pct-v1-0014-0",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-ana-uss-pr-di-stg-pentaho-pct-v1-0014-nic0"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "http://datestresgrp6765.blob.core.windows.net"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/PENTAHO-DASHBOARD"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "938d0138-bdb8-47d3-a7b6-43f6c5b9b124",
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/ASC-DEV-AZSQL04",
+    "name": "ASC-DEV-AZSQL04",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {},
+    "hardwareProfile": {
+      "vmSize": "Standard_D4"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "MicrosoftSQLServer",
+        "offer": "SQL2014SP1-WS2012R2-BYOL",
+        "sku": "Enterprise",
+        "version": "latest"
+      },
+      "osDisk": {
+        "osType": "Windows",
+        "name": "ASC-DEV-AZSQL04",
+        "vhd": {
+          "uri": "https://ascanaussdevdwsql.blob.core.windows.net/vhds/ASC-DEV-AZSQL0420166411526.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "ASC-DEV-AZSQL04-disk-1",
+          "vhd": {
+            "uri": "https://ascanaussdevdwsql.blob.core.windows.net/vhds/ASC-DEV-AZSQL04-disk-1-20166411526.vhd"
+          },
+          "caching": "ReadOnly",
+          "createOption": "Empty",
+          "diskSizeGB": 1023
+        },
+        {
+          "lun": 1,
+          "name": "ASC-DEV-AZSQL04-disk1-azsql04",
+          "vhd": {
+            "uri": "https://ascanaussdevdwsql.blob.core.windows.net/vhds/ASC-DEV-AZSQL04-disk1-azsql04.vhd"
+          },
+          "caching": "None",
+          "createOption": "Empty",
+          "diskSizeGB": 1023
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "ASC-DEV-AZSQL04",
+      "adminUsername": "azureadmin",
+      "windowsConfiguration": {
+        "provisionVMAgent": true,
+        "enableAutomaticUpdates": true
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-dev-azsql04728"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://ascanaussdbbackups.blob.core.windows.net/"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC-ANA-USS-DEV-DW-AS-NHASQL"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "de682e7e-ba36-4641-a222-4c160184294c",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/ASC-DEV-AZSQL04/extensions/dscExtension"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/ASC-DEV-AZSQL04/extensions/enablevmaccess"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/ASC-DEV-AZSQL04/extensions/Microsoft.Insights.VMDiagnosticsSettings"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/ASC-DEV-AZSQL04/extensions/Monitoring"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/ASC-DEV-AZSQL04/extensions/SqlIaasExtension"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/ASC-DEV-SQL01",
+    "name": "ASC-DEV-SQL01",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "hardwareProfile": {
+      "vmSize": "Standard_A9"
+    },
+    "storageProfile": {
+      "osDisk": {
+        "osType": "Windows",
+        "name": "sqlserverimage-osDisk.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+        "vhd": {
+          "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/osDisk.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+        },
+        "image": {
+          "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-osDisk.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "sqlserverimage-dataDisk-0.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-0.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-0.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        },
+        {
+          "lun": 1,
+          "name": "sqlserverimage-dataDisk-1.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-1.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-1.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        },
+        {
+          "lun": 2,
+          "name": "sqlserverimage-dataDisk-2.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-2.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-2.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        },
+        {
+          "lun": 3,
+          "name": "sqlserverimage-dataDisk-3.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-3.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-3.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        },
+        {
+          "lun": 4,
+          "name": "sqlserverimage-dataDisk-4.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-4.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-4.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        },
+        {
+          "lun": 5,
+          "name": "sqlserverimage-dataDisk-5.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-5.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-5.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        },
+        {
+          "lun": 6,
+          "name": "sqlserverimage-dataDisk-6.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-6.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-6.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        },
+        {
+          "lun": 7,
+          "name": "sqlserverimage-dataDisk-7.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-7.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-7.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        },
+        {
+          "lun": 8,
+          "name": "sqlserverimage-dataDisk-8.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-8.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-8.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        },
+        {
+          "lun": 9,
+          "name": "sqlserverimage-dataDisk-9.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-9.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-9.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        },
+        {
+          "lun": 10,
+          "name": "sqlserverimage-dataDisk-10.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-10.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-10.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        },
+        {
+          "lun": 11,
+          "name": "sqlserverimage-dataDisk-11.91112907-9e49-4045-9085-a274b7171e8c.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/vmcontainera5f0443e-5c9a-4cc0-97d1-1cd418db359a/dataDisk-11.a5f0443e-5c9a-4cc0-97d1-1cd418db359a.vhd"
+          },
+          "image": {
+            "uri": "https://ascanaussdevsql.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/sqlserverimage-dataDisk-11.91112907-9e49-4045-9085-a274b7171e8c.vhd"
+          },
+          "caching": "None",
+          "createOption": "FromImage"
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "ASC-DEV-SQL01",
+      "adminUsername": "azureadmin",
+      "windowsConfiguration": {
+        "provisionVMAgent": true,
+        "enableAutomaticUpdates": true
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-dev-sql01563"
+        }
+      ]
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC-ANA-USS-DEV-AS-NHASQL"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "14478715-94bf-4e00-9ebe-e777b74c12a2",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/ASC-DEV-SQL01/extensions/enablevmaccess"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/ASC-DEV-SQL01/extensions/Monitoring"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-dev-tableau",
+    "name": "asc-dev-tableau",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {},
+    "hardwareProfile": {
+      "vmSize": "Standard_DS13_v2"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "MicrosoftWindowsServer",
+        "offer": "WindowsServer",
+        "sku": "2012-R2-Datacenter",
+        "version": "latest"
+      },
+      "osDisk": {
+        "osType": "Windows",
+        "name": "asc-dev-tableau",
+        "vhd": {
+          "uri": "https://datestresgrpdisks495.blob.core.windows.net/vhds/asc-dev-tableau20161208193935.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "asc-dev-tableau-20161208-194854",
+          "vhd": {
+            "uri": "https://datestresgrpdisks495.blob.core.windows.net/vhds/asc-dev-tableau-20161208-194854.vhd"
+          },
+          "caching": "ReadOnly",
+          "createOption": "Empty",
+          "diskSizeGB": 128
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "asc-dev-tableau",
+      "adminUsername": "tableau",
+      "windowsConfiguration": {
+        "provisionVMAgent": true,
+        "enableAutomaticUpdates": true
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/asc-dev-tableau566"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://datestresgrpdiag914.blob.core.windows.net/"
+      }
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "e68bd7de-68f1-4aeb-bde8-849521c98268",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-dev-tableau/extensions/Microsoft.Insights.VMDiagnosticsSettings"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/asc-dev-tableau/extensions/Monitoring"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/confpoc1",
+    "name": "confpoc1",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "hardwareProfile": {
+      "vmSize": "Standard_A4"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "OpenLogic",
+        "offer": "CentOS",
+        "sku": "7.1",
+        "version": "latest"
+      },
+      "osDisk": {
+        "osType": "Linux",
+        "name": "confpoc1",
+        "vhd": {
+          "uri": "https://datestresgrp6765.blob.core.windows.net/vhds/confpoc1201643114268.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "confpoc1",
+      "adminUsername": "confpoc1",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": false
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/confpoc1667"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://datestresgrp6765.blob.core.windows.net/"
+      }
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "be0af7d0-8a37-4b49-9238-97410d2c3ad0",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/confpoc1/extensions/LinuxAsm"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/confpoc1/extensions/Microsoft.Insights.VMDiagnosticsSettings"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/NHA-DEV-AZSQL01",
+    "name": "NHA-DEV-AZSQL01",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "tags": {},
+    "hardwareProfile": {
+      "vmSize": "Standard_D4"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "MicrosoftSQLServer",
+        "offer": "SQL2016-WS2012R2-BYOL",
+        "sku": "Enterprise",
+        "version": "latest"
+      },
+      "osDisk": {
+        "osType": "Windows",
+        "name": "NHA-DEV-AZSQL01",
+        "vhd": {
+          "uri": "https://ascanaussdwdevsql.blob.core.windows.net/vhds/NHA-DEV-AZSQL01201657162739.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "lun": 0,
+          "name": "NHA-DEV-AZSQL01-disk-1",
+          "vhd": {
+            "uri": "https://ascanaussdwdevsql.blob.core.windows.net/vhds/NHA-DEV-AZSQL01-disk-1-201657162739.vhd"
+          },
+          "caching": "ReadOnly",
+          "createOption": "Empty",
+          "diskSizeGB": 1023
+        },
+        {
+          "lun": 1,
+          "name": "NHA-DEV-AZSQL01-disk-2",
+          "vhd": {
+            "uri": "https://ascanaussdwdevsql.blob.core.windows.net/vhds/NHA-DEV-AZSQL01-disk-2.vhd"
+          },
+          "caching": "None",
+          "createOption": "Empty",
+          "diskSizeGB": 1023
+        },
+        {
+          "lun": 2,
+          "name": "NHA-DEV-AZSQL01-Disk3",
+          "vhd": {
+            "uri": "https://ascanaussdwdevsql.blob.core.windows.net/vhds/NHA-DEV-AZSQL01-Disk3.vhd"
+          },
+          "caching": "None",
+          "createOption": "Empty",
+          "diskSizeGB": 1023
+        },
+        {
+          "lun": 3,
+          "name": "NHA-DEV-AZSQL04-disk-4-20170310-220932.vhd",
+          "vhd": {
+            "uri": "https://ascanaussdwdevsql.blob.core.windows.net/vhds/NHA-DEV-AZSQL04-disk-4-20170310-220932.vhd"
+          },
+          "caching": "None",
+          "createOption": "Empty",
+          "diskSizeGB": 50
+        }
+      ]
+    },
+    "osProfile": {
+      "computerName": "NHA-DEV-AZSQL01",
+      "adminUsername": "azureadmin",
+      "windowsConfiguration": {
+        "provisionVMAgent": true,
+        "enableAutomaticUpdates": true
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/nha-dev-azsql01175"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://ascanaussdbbackups.blob.core.windows.net/"
+      }
+    },
+    "availabilitySet": {
+      "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/availabilitySets/ASC-ANA-USS-DW-DEV-AS-NHASQL"
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "fbfc3393-22ea-41b2-9f9e-e8decb07a589",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/NHA-DEV-AZSQL01/extensions/dscExtension"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/NHA-DEV-AZSQL01/extensions/Microsoft.Insights.VMDiagnosticsSettings"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/NHA-DEV-AZSQL01/extensions/Monitoring"
+      },
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/NHA-DEV-AZSQL01/extensions/SqlIaasExtension"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM running"
+  },
+  {
+    "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/redhat-kernelpanic",
+    "name": "redhat-kernelpanic",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "southcentralus",
+    "hardwareProfile": {
+      "vmSize": "Basic_A1"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "RedHat",
+        "offer": "RHEL",
+        "sku": "7.2",
+        "version": "latest"
+      },
+      "osDisk": {
+        "osType": "Linux",
+        "name": "redhat-kernelpanic",
+        "vhd": {
+          "uri": "https://datestresgrp6765.blob.core.windows.net/vhds/redhat-kernelpanic20170313134603.vhd"
+        },
+        "caching": "ReadWrite",
+        "createOption": "FromImage"
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "redhat-kernelpanic",
+      "adminUsername": "azure-user",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/azure-user/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivunFidWHXu4fVlEptn+dnk5zdixau/eQr7HSsFEApYAEmEGdL0nu2jdYW3PebMXdH0LP/MeRlQC9b1TbuefdwsoOKU0d4lV0LMPhduDsGzmV7SOBt6V0sT31ZCcOGIjnKOrMffARziW9ggBPQd5CRWFlDWQCajmJHkbZ1S9EqzAtOK7KsdE2Qk4Syu+3k0P/eeQVgp6JOHZuDuiu9eWwEj0oqCB3LPowYUZ82VQJ3TXhRydxDefOpB8A4Xd+n5fcs/rdgbRnRVKafXldQUklGW1sO/hJtN1SHitZPYbbkqwM1TUfPXe4a5+3t6KIFr8qis0U5QGWqcmXthPPaTWb"
+            }
+          ]
+        }
+      },
+      "secrets": []
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/DA-Test-ResGrp/providers/Microsoft.Network/networkInterfaces/redhat-kernelpanic97"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://datestresgrpdiag507.blob.core.windows.net/"
+      }
+    },
+    "provisioningState": "Succeeded",
+    "vmId": "67b7e8c9-b251-47c5-9fd1-cf7df5b56898",
+    "resources": [
+      {
+        "id": "/subscriptions/2ebbd432-60be-4128-b08e-4c1d76a62822/resourceGroups/Da-Test-Resgrp/providers/Microsoft.Compute/virtualMachines/redhat-kernelpanic/extensions/LinuxAsm"
+      }
+    ],
+    "resourceGroupName": "Da-Test-Resgrp",
+    "powerState": "VM deallocated"
+  }
+]

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Ascend Learning</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	    <link rel="icon" href="https://www.ixxus.com/wp-content/uploads/2015/07/Ascend-Learning.png">
+
+	    <!-- Load all styles here -->
+	    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	    <link rel="stylesheet" type="text/css" href="./styles/css/main.css">
+	    <link rel="stylesheet" href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css">
+	</head>
+
+	<body ng-app="trustCafeApp">
+		<div ng-include="'views/header.html'"></div>
+		<ng-view></ng-view>
+	</body>
+
+	<!-- Please load all scripts only here -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular-translate/angular-translate.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+	<!-- Controllers / Directive -->
+	<script src="js/app.js"></script>
+	<script src="js/controllers/mainController.js"></script>
+	<script src="js/controllers/productListController.js"></script>
+
+	<!-- External scripts -->
+	<script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
+
+</html>

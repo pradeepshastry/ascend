@@ -1,0 +1,33 @@
+{
+  "name": "Trust-Cafe",
+  "description": "Trusted circle of associates to buy/sell some awesome articles",
+  "main": "",
+  "authors": [
+    "Pradeep Kumar P <pradeep.shastry85@gmail.com>",
+    "Ramakrishnan V <raamkrish23@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "trust",
+    "cafe",
+    "trustcircle",
+    "trustcafe"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "jquery": "^3.1.1",
+    "angular-route": "^1.6.2",
+    "angular-translate": "^2.15.1",
+    "ng-table": "^4.0.0"
+  }
+}

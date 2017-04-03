@@ -1,0 +1,41 @@
+body {
+	background-color: #f6f6f6;
+}
+
+thead {
+	/*background-color: #d7d7d7;*/
+}
+
+.table {
+	background-color: #fafafa;
+	margin-bottom: 20px !important;
+}
+
+.header {
+	background-color: white;
+}
+
+.logo {
+	color: #ffffff !important;
+	font-size: 25px;
+}
+
+.product-list {
+	margin: 75px 35px 35px 35px;
+}
+
+.div_shadow
+{
+	box-shadow: 1px 2px 5px 0px #BEC1C4;
+	-webkit-box-shadow: 1px 2px 5px 0px #BEC1C4;
+	-moz-box-shadow: 1px 2px 5px 0px #BEC1C4;
+	-o-box-shadow: 1px 2px 5px 0px #BEC1C4;
+}
+
+.green {
+	color: forestgreen;
+}
+
+.red {
+	color: orangered;
+}
