@@ -4,12 +4,12 @@
 		<tr ng-repeat="vm in $data">
 	    	<td class="col-sm-4" title="'NAME'" filter="{ name: 'text'}" sortable="'name'">{{vm.name}}</td>
 		    <td class="col-sm-2" title="'GROUP NAME'" filter="{ resourceGroupName: 'text'}" sortable="'resourceGroupName'">{{vm.resourceGroupName}}</td>
-		    <td class="col-sm-2" title="'PROVISIONING STATE'" filter="{ provisioningState: 'text'}" sortable="'provisioningState'">{{vm.provisioningState}}</td>
+		    <td class="col-sm-2" title="'STATE'" filter="{ provisioningState: 'text'}" sortable="'provisioningState'">{{vm.provisioningState}}</td>
 		    <td class="col-sm-2" title="'POWER STATE'" filter="{ powerState: 'text'}" sortable="'powerState'">{{vm.powerState}}</td>
 		    <td class="col-sm-1" title="'LOCATION'" filter="{ location: 'text'}" sortable="'location'">{{vm.location}}</td>
 		    <td class="col-sm-1" title="'SIZE'" filter="{ vmSize: 'text'}" title="'Age'"sortable="'hardwareProfile.vmSize'">{{vm.hardwareProfile.vmSize}}</td>
 		    <td class="col-sm-1" title="'ACTION'" style="text-align: center;">
-		    	<i class="glyphicon" ng-class="{'glyphicon-stop red' : (vm.powerState=='VM running'), 'glyphicon-play green' : !(vm.powerState=='VM running')}" ng-click="playPause(vm.name)"></i>
+		    	<i class="glyphicon" ng-class="{'glyphicon-stop red' : (vm.powerState=='VM running'), 'glyphicon-play green' : !(vm.powerState=='VM running')}" ng-click="playPause(vm.name, vm.resourceGroupName, vm.powerState)"></i>
 		    </td>
 		</tr>
 	</table>

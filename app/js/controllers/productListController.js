@@ -15,11 +15,14 @@ angular.module ('trustCafeApp')
 		});
 	};
 
-	$scope.playPause = function (id) {
-		console.log("Instance to start/stop ->"+id)
+	$scope.playPause = function (id, resGrpName, pwrState) {
+		var nextState = "start"
+		if ( pwrState =='VM running' )
+			nextState = "stop"
+
 		$http({
 		  method: 'GET',
-		  url: '/api/playPause/'+id
+		  url: '/api/playPause/'+id+"/"+resGrpName+"/"+nextState
 		}).then(function successCallback(response) {
 			console.log("Resfreshing table")
 			getData();
